@@ -1,39 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI in Mobility – FUTURE AI</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div id="header"></div>
-      <nav>
-  <div class="logo">
-    <h1>FUTURE<span>AI</span></h1>
-  </div>
-  <div class="navbar">
-    <div><a href="index.html">Home</a></div>
-    <div><a href="#products">Products</a></div>
-    <div><a href="#">Innovation</a></div>
-    <div><a href="#">Contact</a></div>
-  </div>
-  <script>
-  const links = document.querySelectorAll(".navbar a");
-  links.forEach(link => {
-    if (link.href === window.location.href) {
-      link.style.color = "#00ffff";
-      link.style.textShadow = "0 0 15px #00ffff";
-    }
-  });
-</script>
-
-</nav>
 
   <section class="product-page">
     <h1>AI in Mobility</h1>
-    <p>From autonomous driving to intelligent traffic management, AI is transforming mobility. These systems analyze real-time data to enhance safety, reduce congestion, and create smarter, greener cities.</p>
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.QZRUtEA8SeOZrUtbE7XCegHaHa%3Fpid%3DApi&f=1&ipt=4f6696bf3d61e848c4809c8d812c74c871e6732a70a7993654d6ef3eb125bdad&ipo=images" alt="AI Vehicle" class="product-img">
+    <p>Electric scooters use smart dashboards, GPS, OTA updates, and AI-driven riding data for safer and efficient
+      travel.
+    </p>
+    <div class="cards" id="products">
+      <div class="card">
+        <h2>Ather 450X</h2>
+        <img
+          src="https://cdn.bikedekho.com/processedimages/ola-electric/2025-s1-pro/source/2025-s1-pro679ce0d5bd70a.jpg"
+        <p>Touchscreen display, Google Maps navigation, fast charging, high acceleration, strong build, OTA updates.
+          Range approx 110–145 km. Best handling in segment.
+          Price: ₹1.28 lakh – ₹1.58 lakh
+        </p>
+      </div>
+
+      <div class="card">
+
+        <h2>Ola S1 Pro</h2>
+        <img
+          src="https://imgd.aeplcdn.com/642x361/n/cw/ec/195087/450x-right-front-three-quarter-13.jpeg?isig=0&wm=3&q=75"
+          alt="">
+        <p>Longer range up to 181 km, voice commands, touchscreen, multiple modes, keyless entry, and AI-enabled battery
+          management. Ideal for city commute.
+          Price: ₹1.25 lakh – ₹1.40 lakh
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>
+          Tesla Model 3 Autopilot</h2>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ZWZ7MmbOkywgFQCh4Cdwepld_U4Jg2XICdtVZX6RUaEWMMUn9CA-SyDAl8wVAw9w6Fc&usqp=CAU"
+          alt="Health Wearable">
+
+        <p>
+          Handles highway lane-keeping, braking, and speed automatically. Best consumer-level autonomous tech but still
+          requires supervision. Constant OTA upgrades improve capability.
+          Price: ₹28–50 lakh equivalent (not in India officially)
+        </p>
+      </div>
+      <div class="card">
+        <h2>Waymo Driver System</h2>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjfFQ-XbLYCTsAvvYfbNxODoudl2_iUjJnlFdlja2rKL0IvIwG8jw1tOTxAo7r-MogkA4&usqp=CAU"
+          alt="Health Wearable">
+
+        <p>Fully driverless taxis operating in select US cities. Uses LiDAR + neural AI to drive without humans. A
+          next-generation transportation system still in testing phase.
+          Price: Not sold to public
+        </p>
+      </div>
+    </div>
   </section>
 
   <script>
@@ -42,4 +72,5 @@
       .then(data => document.getElementById("header").innerHTML = data);
   </script>
 </body>
+
 </html>
