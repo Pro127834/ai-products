@@ -8,6 +8,27 @@
 </head>
 <body>
   <div id="header"></div>
+      <nav>
+  <div class="logo">
+    <h1>FUTURE<span>AI</span></h1>
+  </div>
+  <div class="navbar">
+    <div><a href="index.html">Home</a></div>
+    <div><a href="#products">Products</a></div>
+    <div><a href="#">Innovation</a></div>
+    <div><a href="#">Contact</a></div>
+  </div>
+  <script>
+  const links = document.querySelectorAll(".navbar a");
+  links.forEach(link => {
+    if (link.href === window.location.href) {
+      link.style.color = "#00ffff";
+      link.style.textShadow = "0 0 15px #00ffff";
+    }
+  });
+</script>
+
+</nav>
 
   <section class="product-page">
     <h1>AI-Powered Cleaning Robots</h1>
