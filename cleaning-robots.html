@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Robots – FUTURE AI</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div id="header"></div>
-      <nav>
-  <div class="logo">
-    <h1>FUTURE<span>AI</span></h1>
-  </div>
-  <div class="navbar">
-    <div><a href="index.html">Home</a></div>
-    <div><a href="#products">Products</a></div>
-    <div><a href="#">Innovation</a></div>
-    <div><a href="#">Contact</a></div>
-  </div>
-  <script>
-  const links = document.querySelectorAll(".navbar a");
-  links.forEach(link => {
-    if (link.href === window.location.href) {
-      link.style.color = "#00ffff";
-      link.style.textShadow = "0 0 15px #00ffff";
-    }
-  });
-</script>
-
-</nav>
 
   <section class="product-page">
     <h1>AI-Powered Cleaning Robots</h1>
-    <p>Cleaning robots such as Roomba and Roborock use AI mapping to scan and learn your home layout, optimizing cleaning routes and automatically avoiding obstacles for a smarter, effortless cleaning experience.</p>
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.JkwbR4jFKCXoFQJoIgTlpgHaG8%3Fpid%3DApi&f=1&ipt=07c5267b28e0f2c1d8a7dcb815c05863c2d4605d4ecd32e360ce3e1fd3f2fad3&ipo=images" alt="Cleaning Robot" class="product-img">
-  </section>
+    <p>AI cleaning robots map your home, detect obstacles, vacuum automatically, and even mop floors — reducing manual
+      cleaning effort significantly.</p>
+      <div class="cards" id="products">
+        <div class="card">
+          <h2>iRobot Roomba i7+</h2>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1mzCSdgqEN8SKhNtXD9wDDokaQ6ge-K3Gk-G7qfY57p4TN1DwRE6uG00NqMtwSYtyWPM&usqp=CAU"
+            alt="Smart Speaker">
+          <p>High-end vacuum with LiDAR mapping, strong suction, room scheduling, and automatic dust-bin emptying.
+            Handles carpets and pet hair excellently. Best for large homes needing automation.
+            Price: ₹55,000 – ₹95,000
+          </p>
+        </div>
 
-  <script>
-    fetch("header.html")
-      .then(res => res.text())
-      .then(data => document.getElementById("header").innerHTML = data);
-  </script>
+        <div class="card">
+
+          <h2>Xiaomi Mi Robot Vacuum-Mop P</h2>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgjtvL8RtYCfWhv2ofTmyDEv5X8I9aJ91dr-lrCxyJEr5Gg8SsqNafRka79-pAx3-7yyY&usqp=CAU"
+            alt="">
+          <p>Affordable vacuum + mop with smart navigation, room mapping, app control, and voice assistant support.
+            Ideal for daily dusting and hair cleaning at a budget.
+            Price: ₹19,000 – ₹29,000
+          </p>
+        </div>
+    </section>
+
+    <script>
+      fetch("header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+    </script>
 </body>
+
 </html>
