@@ -221,8 +221,8 @@ nav .logo span {
 }
 
 .card img {
-    width: 80px;
-    height: 80px;
+    width: 400px;
+    height: 150px;
     object-fit: contain;
     margin-bottom: 1rem;
     filter: drop-shadow(0 0 10px #00ffff);
@@ -233,12 +233,16 @@ nav .logo span {
     color: #00ffff;
     font-size: 1.2rem;
     margin-bottom: 0.8rem;
+
 }
 
 .card p {
     color: #d6d6d6;
     font-size: 0.95rem;
     line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 /* Card Button */
@@ -291,6 +295,9 @@ nav .logo span {
     max-width: 800px;
     margin: 0 auto 30px;
     line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .product-img {
