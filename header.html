@@ -1,45 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-</head>
-<body>
-    <nav>
-  <div class="logo">
-    <h1>FUTURE<span>AI</span></h1>
-  </div>
-  <div class="navbar">
-    <div><a href="index.html">Home</a></div>
-    <div><a href="index.html#products">Products</a></div>
-    <div><a href="#">Innovation</a></div>
-    <div><a href="#">Contact</a></div>
-  </div>
-  <script>
-  const links = document.querySelectorAll(".navbar a");
-  links.forEach(link => {
-    if (link.href === window.location.href) {
-      link.style.color = "#00ffff";
-      link.style.textShadow = "0 0 15px #00ffff";
-    }
-  });
-</script>
 
-</nav>
- <div id="header"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health & Fitness Wearables – FUTURE AI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <section class="product-page">
+    <h1>Health & Fitness Wearables</h1>
+    <p>AI-based wearables track activity, heart rate, sleep patterns, stress, and recovery. Devices like Apple Watch,
+      Samsung Galaxy Watch, Fitbit, and Oura Ring analyze real-time body data to provide personalized fitness and
+      wellness insights. </p>
+    <div class="cards" id="products">
+      <div class="card">
+        <h2>Apple Watch Series 9 / Ultra</h2>
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Smart Speaker">
+        <p>Apple Watch uses advanced health sensors to measure heart rate, ECG, blood oxygen, temperature trends, and
+          sleep quality. With crash detection, fall alerts, and fitness tracking, it works as a powerful daily health
+          companion. AI helps detect irregular heart rhythms and gives personalized fitness coaching. Ideal for iPhone
+          users looking for medical-grade health monitoring.
+          Price: ₹41,000 – ₹89,900</p>
+      </div>
+
+      <div class="card">
+
+        <h2>Samsung Galaxy Watch 6</h2>
+        <img
+          src="https://img.global.news.samsung.com/global/wp-content/uploads/2025/10/Samsung-Mobile-Galaxy-Watch-One-UI-6-Watch-Update-Expands-Availability_main3.jpg"
+          alt="">
+        <p>Samsung Galaxy Watch 6 tracks sleep score, body composition (BIA), stress levels, ECG, and heart rate with
+          strong AI-driven insights. Smooth UI, strong battery life, and deep integration with Samsung Health make it
+          excellent for Android users.
+          Price: ₹29,000 – ₹55,000
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Fitbit Charge 6</h2>
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.ebINt5JW9IV1h_1QdjISzwHaEK%3Fpid%3DApi&f=1&ipt=422c611c4c27100bf6c44ddada46c124543328c467839b95cde8990b9ab1ab59&ipo=images"
+          alt="Health Wearable">
+
+        <p>Fitbit focuses heavily on wellness data — heart rate zones, sleep score, breathing rate, stress monitoring,
+          and workout tracking. With a lightweight design and long battery life, it's a budget-friendly health wearable.
+          Its AI health guidance system provides recovery suggestions and daily readiness scores.
+          Price: ₹11,000 – ₹15,000.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Oura Ring Gen 3</h2>
+        <img
+          src="https://article.images.consumerreports.org/image/upload/w_652,f_auto,q_auto/v1701198576/prod/content/dam/CRO-Images-2023/11November/Rapid-Response/CR-RR-Inline-Oura-Ring-11-23"
+          alt="Health Wearable">
+
+        <p>Oura Ring targets sleep, recovery, and wellness more than workouts. It analyses heart rate variability (HRV),
+          temperature, and night movement to provide accurate sleep staging and recovery insights. Compact and discreet
+          alternative to watches.
+          Price: ₹28,000 – ₹35,000.
+        </p>
+      </div>
+    </div>
+
+  </section>
 
   <script>
     fetch("header.html")
-      .then(response => response.text())
+      .then(res => res.text())
       .then(data => document.getElementById("header").innerHTML = data);
-
   </script>
-  
 </body>
+
 </html>
