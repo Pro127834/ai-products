@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Home Appliances – FUTURE AI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <section class="product-page">
+    <h1>Smart Home Appliances</h1>
+    <p>AI-powered appliances such as smart refrigerators, ovens, and washing machines adapt to your lifestyle, learning your routines to save energy and enhance convenience across connected home systems.</p>
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F01%2F00%2F68%2F31%2F1000_F_100683125_w9DknQCHoxhgeL2C4rfJpq5j73AbweQi.jpg&f=1&nofb=1&ipt=39a01e66a9790ad5019bfb56c9dffda79d49fd94f738c6224f616c23720fd949" alt="Smart Appliance" class="product-img">
+  </section>
+
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Speakers – FUTURE AI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <section class="product-page">
+    <h1>Smart Speakers & Voice Assistants</h1>
+    <p>Smart speakers like Amazon Echo and Google Nest allow hands-free interaction with AI-powered assistants. They manage smart homes, control lights, answer questions, and even play your favorite music using natural language processing.</p>
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.085MUZqVmzzXP4JdsMQkdAHaFj%3Fpid%3DApi&f=1&ipt=1e6c7d8ae135530b05118b91eaf9962af5e2547734eddeb6d3600efa93c7df95&ipo=images" alt="Smart Speaker" class="product-img">
+  </section>
+
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health & Fitness Wearables – FUTURE AI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <section class="product-page">
+    <h1>Health & Fitness Wearables</h1>
+    <p>Wearable AI devices like smartwatches and fitness trackers analyze biometric data — heart rate, sleep, oxygen, and stress — using AI to deliver personalized wellness insights and predictive health monitoring.</p>
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.EO0dJLDLxmFHnC-viI4ftAHaFj%3Fpid%3DApi&f=1&ipt=66d85483d0a25af30f3116843db1035d28acec7803970bc8fed425187490f9d9&ipo=images" alt="Health Wearable" class="product-img">
+  </section>
+
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI in Mobility – FUTURE AI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <section class="product-page">
+    <h1>AI in Mobility</h1>
+    <p>From autonomous driving to intelligent traffic management, AI is transforming mobility. These systems analyze real-time data to enhance safety, reduce congestion, and create smarter, greener cities.</p>
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.QZRUtEA8SeOZrUtbE7XCegHaHa%3Fpid%3DApi&f=1&ipt=4f6696bf3d61e848c4809c8d812c74c871e6732a70a7993654d6ef3eb125bdad&ipo=images" alt="AI Vehicle" class="product-img">
+  </section>
+
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
+</body>
+</html>

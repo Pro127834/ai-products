@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neuralink – FUTURE AI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <section class="product-page">
+    <h1>Neuralink</h1>
+    <p>Neuralink is developing brain–computer interfaces that directly connect the human brain to AI systems. This technology could help restore movement, memory, and sensory functions — marking the beginning of true human-AI integration.</p>
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.qvy4bse5_c1wCBpXnQNOZgHaEz%3Fpid%3DApi&f=1&ipt=594bee6d7a75f9269733cf72d2baf82f1f02f19fbd7f81638a914c86277016bc&ipo=images" alt="Neuralink Device" class="product-img">
+  </section>
+
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
+</body>
+</html>
