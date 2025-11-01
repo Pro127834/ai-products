@@ -11,6 +11,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -21,17 +22,21 @@ html {
     font-weight: 600;
     font-style: normal;
 }
+
 .poppins-medium {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
+
 .firstpage {
     /* background-color: black; */
     height: 100vh;
     width: 100%;
     background-color: #001C36;
+    background: radial-gradient(circle at top, #001c36 20%, #000 80%);
 }
+
 .firstpage nav {
     display: flex;
     justify-content: space-between;
@@ -42,23 +47,26 @@ html {
     width: 100%;
     height: 10vh;
     /* border: solid; */
-     font-family: "Orbitron", sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     background-color: black;
-    
+
 }
+
 .firstpage nav .navbar {
     display: flex;
     gap: 50px;
 }
+
 .firstpage nav .navbar a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
     text-shadow: 0 0 20px #00ffff;
 }
+
 .firstpage nav .logo {
     font-family: "Orbitron", sans-serif;
     display: flex;
@@ -67,16 +75,19 @@ html {
     width: 20vw;
 
 }
-.firstpage nav .logo span{
+
+.firstpage nav .logo span {
     /* border: solid; */
     padding: 5px 10px;
     font-size: 1.5rem;
 }
-.firstpage nav .logo h1{
+
+.firstpage nav .logo h1 {
     font-size: 2rem;
     color: white;
     text-shadow: 0 0 20px #00ffff;
 }
+
 .firstpage .text {
     /* border: solid black; */
     height: 90vh;
@@ -84,17 +95,21 @@ html {
     justify-content: center;
     /* align-items: center; */
     text-align: center;
-    padding-top: 100px;
+    padding-top: 120px;
 
 }
+
 .firstpage .text p {
     /* border: solid black ; */
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 1.5;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
+
 .firstpage .text p span {
     display: block;
     margin-top: 20px;
@@ -102,7 +117,10 @@ html {
     /* color: #00ffff;  */
     color: rgb(219, 207, 207);
     font-weight: 400;
-}   
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
 .firstpage .text p button {
     margin-top: 30px;
     padding: 10px 20px;
@@ -114,17 +132,24 @@ html {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    /* box-shadow: 0 0 10px #00ffff; */
+    box-shadow: 0 0 10px #00ffff;
 }
-.secondpage{
+.firstpage .text p a{
+     text-decoration: none;
+     color: #ffffff;
+}
+
+.secondpage {
     height: 150vh;
     width: 100%;
 }
+
 .secondpage .texta {
-    height:30vh;
+    height: 30vh;
     width: 100%;
 }
-.secondpage .texta h1{
+
+.secondpage .texta h1 {
     /* border: solid; */
     display: flex;
     justify-content: center;
@@ -133,7 +158,8 @@ html {
     font-size: 2rem;
     padding-bottom: 20px;
 }
-.secondpage .texta p{
+
+.secondpage .texta p {
     /* border: solid; */
     display: flex;
     justify-content: center;
@@ -142,6 +168,7 @@ html {
     font-size: 1.2rem;
     font-weight: 400;
 }
+
 .secondpage .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -190,6 +217,7 @@ html {
     line-height: 1.5;
     font-weight: 400;
 }
+
 .card-btn {
     display: inline-block;
     margin-top: 1.2rem;
@@ -239,15 +267,58 @@ html {
         flex-direction: column;
         align-items: center;
     }
+
     .firstpage nav .logo {
         margin-bottom: 20px;
         align-items: center;
-        justify-content: center ;
+        justify-content: center;
     }
+
     .firstpage nav .navbar {
         flex-direction: column;
         gap: 10px;
     }
 }
+body {
+    max-width: 1600px;
+    margin: 0 auto;          
+}
 
-    
+
+.firstpage, 
+.secondpage {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1800px) {
+    .secondpage .cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .card {
+        max-width: 350px;
+    }
+}
+
+.firstpage .text p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: clamp(1.5rem, 1.5vw + 1rem, 2.2rem);
+    line-height: 1.6;
+}
+
+.secondpage .texta {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (min-width: 2200px) {
+    body {
+        transform: scale(1.1);
+        transform-origin: top center;
+    }
+}
