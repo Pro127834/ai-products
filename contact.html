@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Future AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* CONTACT PAGE STYLING */
+.contact-page {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #001c36 20%, #000 80%);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 80px auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00ffff55;
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Orbitron", sans-serif;
+    text-shadow: 0 0 20px #00ffff;
+}
+
+.contact-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #111;
+    color: white;
+    outline: none;
+}
+
+.contact-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0089A2;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffff;
+    transition: 0.3s;
+}
+
+.contact-container button:hover {
+    background-color: #00bcd4;
+}
+
+</style>
+<body>
+    <div id="header"></div>
+
+    <div class="contact-page">
+        <nav>
+            <div class="logo">
+                <h1>FUTURE<span>AI</span></h1>
+            </div>
+            <div class="navbar">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="aboutUs.html">About</a></div>
+                <div><a href="contact.html">Contact Us</a></div>
+                <div><a href="index.html#products">Products</a></div>
+            </div>
+        </nav>
+
+        <div class="contact-container">
+            <h2>Get in Touch</h2>
+            <form action="save_contact.php" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
