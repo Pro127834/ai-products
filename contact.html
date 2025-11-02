@@ -1,6 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Future AI</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* CONTACT PAGE STYLING */
+    .contact-page {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #001c36 20%, #000 80%);
+      color: white;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .contact-container {
+      width: 90%;
+      max-width: 500px;
+      margin: 80px auto;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00ffff55;
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: "Orbitron", sans-serif;
+      text-shadow: 0 0 20px #00ffff;
+    }
+
+    .contact-container label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #111;
+      color: white;
+      outline: none;
+    }
+
+    .contact-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #0089A2;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 0 10px #00ffff;
+      transition: 0.3s;
+    }
+
+    .contact-container button:hover {
+      background-color: #00bcd4;
+    }
+
+    /* 🔷 FUTURISTIC MODAL POPUP */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      z-index: 1000;
+    }
+
+    .popup-overlay.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .popup-box {
+      background: #000;
+      border: 2px solid #00ffff;
+      box-shadow: 0 0 30px #00ffff99;
+      border-radius: 12px;
+      padding: 40px;
+      text-align: center;
+      animation: glow 1.5s infinite alternate;
+    }
+
+    .popup-box h3 {
+      font-family: "Orbitron", sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #00ffff;
+      text-shadow: 0 0 15px #00ffff;
+    }
+
+    .popup-box p {
+      font-family: "Poppins", sans-serif;
+      font-size: 1rem;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .popup-box button {
+      background-color: #0089a2;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+      font-family: "Poppins", sans-serif;
+      font-size: 1rem;
+      box-shadow: 0 0 10px #00ffff88;
+      transition: 0.3s;
+    }
+
+    .popup-box button:hover {
+      background-color: #00bcd4;
+      box-shadow: 0 0 20px #00ffffaa;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 20px #00ffff55;
+      }
+      to {
+        box-shadow: 0 0 40px #00ffffaa;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contact-page">
+    <nav>
+      <div class="logo">
+        <h1>FUTURE<span>AI</span></h1>
+      </div>
+      <div class="navbar">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="aboutUs.html">About</a></div>
+        <div><a href="contact.html">Contact Us</a></div>
+        <div><a href="index.html#products">Products</a></div>
+      </div>
+    </nav>
+
+    <div class="contact-container">
+      <h2>Get in Touch</h2>
+      <form class="contact-form" id="contactForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ✨ Futuristic Popup Modal -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup-box">
+      <h3>Message Sent 🚀</h3>
+      <p>Thank you for reaching out to Future AI. Redirecting you to the homepage...</p>
+      <button id="popupClose">OK</button>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("contactForm");
+    const popup = document.getElementById("popup");
+    const popupClose = document.getElementById("popupClose");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      popup.classList.add("active");
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 3000); // auto redirect after 3 seconds
+    });
+
+    popupClose.addEventListener("click", () => {
+      popup.classList.remove("active");
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Future AI</title>
