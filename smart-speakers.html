@@ -14,11 +14,21 @@
   </div>
   <div class="navbar">
     <div><a href="index.html">Home</a></div>
-    <div><a href="index.html#products">Products</a></div>
+    <div><a href="index.html">Products</a></div>
     <div><a href="#">Innovation</a></div>
-    <div><a href="#">Contact</a></div>
+    <div><a href="contact.html">Contact Us</a></div>
   </div>
+  <script>
+  const links = document.querySelectorAll(".navbar a");
+  links.forEach(link => {
+    if (link.href === window.location.href) {
+      link.style.color = "#00ffff";
+      link.style.textShadow = "0 0 15px #00ffff";
+    }
+  });
+</script>
 
+</nav>
   <section class="product-page">
     <h1>Smart Speakers & Voice Assistants</h1>
     <p>Smart speakers like Amazon Echo and Google Nest allow hands-free interaction with AI-powered assistants. They manage smart homes, control lights, answer questions, and even play your favorite music using natural language processing.</p>
