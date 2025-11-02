@@ -133,6 +133,7 @@ html {
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 0 10px #00ffff;
+    width: 20vw;
 }
 .firstpage .text p a{
      text-decoration: none;
